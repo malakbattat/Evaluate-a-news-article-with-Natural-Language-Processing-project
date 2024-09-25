@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Article Evaluator</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Evaluate News Article with NLP</h1>
+    </header>
+
+    <main>
+        <form id="evaluateForm">
+            <label for="text">Enter article text:</label>
+            <textarea id="text" name="text" required></textarea>
+            <button type="submit">Analyze</button>
+        </form>
+
+        <section id="results">
+            <h3>Results:</h3>
+            <div id="polarity"></div>
+            <div id="subjectivity"></div>
+            <div id="textSnippet"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by MeaningCloud API</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
